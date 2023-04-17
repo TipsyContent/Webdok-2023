@@ -34,7 +34,7 @@ body{
     font-weight: 600;
     z-index: 2;
     width: 100%;
-    background: #589600;
+    background: #f8f8f8;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     position: relative;
   }
@@ -74,7 +74,7 @@ body{
   }
   
   .navbar_links {
-    color: #fff;
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -94,7 +94,7 @@ body{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
   }
   @media (max-width: 1220px) {
     .hamburger {
@@ -191,6 +191,58 @@ body{
       background-color: #616161;
     }
 /* Scroll to top slut */
+
+
+
+/* Overskrift og big picture */
+
+.landingpage{
+    height: 1000px;
+    text-align: center;
+}
+
+#textbox{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.landingpage h1{
+
+    padding-top: 80px;
+    font-size: 43pt;
+    font-family: "owners-narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+.landingpage p{
+
+    
+    font-size: 13pt;
+    font-weight: 100;
+    font-family: "dashiell-text", serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 footer .containerfooter{
