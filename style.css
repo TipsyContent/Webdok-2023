@@ -53,6 +53,8 @@ body{
     margin: 0 auto;
     position: relative;
     left: 5px;
+    justify-content: center;
+    align-items: center;
   }
   
   .navbar_menu {
@@ -72,7 +74,12 @@ body{
     width: 150px;
     mix-blend-mode: multiply;
   }
-  
+  #navlogo{
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex
+  }
   .navbar_links {
     color: rgb(0, 0, 0);
     display: flex;
