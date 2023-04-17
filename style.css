@@ -10,9 +10,23 @@ body{
     min-height: 100vh;
     
 }
+
+/* kode til font overskrift: 
+    font-size: 40pt;
+    font-family: "owners-narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+    kode til font rubrik: 
+    font-size: 13pt;
+    font-weight: 100;
+    font-family: "dashiell-text", serif;
+*/
+
+
 /* Header */
 header .li, .a, .button{
-    font-family: ;
+    font-family: "owners-narrow", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #fff;
