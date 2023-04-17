@@ -78,7 +78,8 @@ body{
     height: 50px;
     align-items: center;
     justify-content: center;
-    display: flex
+    display: flex;
+    position: sticky;
   }
   .navbar_links {
     color: rgb(0, 0, 0);
@@ -105,13 +106,14 @@ body{
   }
   @media (max-width: 1220px) {
     .hamburger {
+      position: fixed;
       display: block;
-      margin-top: 15px;
       cursor: pointer;
       align-items: center;
       justify-content: center;
       list-style: none;
       text-align: center;
+      padding-left: 30px;
       z-index: 999;
     }
     .navbar_buttons .navbar_btn {
