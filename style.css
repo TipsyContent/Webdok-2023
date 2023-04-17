@@ -25,37 +25,151 @@ body{
 
 
 /* Header */
-header .li, .a, .button{
-    font-family: "owners-narrow", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+.navbar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    z-index: 2;
+    width: 100%;
+    background: #589600;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  .navrow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  
+  .navbar_container {
+    display: flex;
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    left: 5px;
+  }
+  
+  .navbar_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .navbar_item {
+    height: 80px;
+  }
+  
+  /* Logo */
+  #navbarlogo {
+    width: 150px;
+    mix-blend-mode: multiply;
+  }
+  
+  .navbar_links {
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-}
-header {
+    padding: 0 2rem;
+    height: 100%;
+  }
+  
+  /* Navigations Burger Menu */
+  .hamburger {
+    display: none;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+  @media (max-width: 1220px) {
+    .hamburger {
+      display: block;
+      margin-top: 15px;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      text-align: center;
+      z-index: 999;
+    }
+    .navbar_buttons .navbar_btn {
+      z-index: 999;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar_menu:not(.hamburger) {
+      position: fixed;
+      left: -100%;
+      top: 0px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #589600;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+  
+    .navbar_item {
+      margin: 25px 0;
+    }
+    .navbar_menu.active {
+      left: 0;
+      padding-top: 100px;
+      z-index: 5;
+    }
+    .logo_on_top {
+      z-index: 999;
+      position: relative;
+    }
+  }
+  /* SIGN UP KNAPPEN */
+  .navbar_btn {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
-}
-.logo{
-    cursor: pointer;
-}
-.nav_links {
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
     list-style: none;
-}
-.nav_links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-.nav_links li a{
-    transition: all 0.3s ease 0s;
-}
-.nav_links li a:hover{
-    color: #0088a9;
-
-}
-button
+  }
+  .buttons_container {
+    height: 60px;
+    width: 100%;
+  }
+  .navbar_buttons {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-decoration: none;
+    height: 100%;
+    width: 200px;
+    list-style: none;
+    float: right;
+  }
 /* Header slut */
 /* Scroll to top */
 #myBtn{
