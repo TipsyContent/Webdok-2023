@@ -235,6 +235,12 @@ body{
     font-weight: 100;
     font-family: "dashiell-text", serif;
 }
+.videobox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
 
 
 
@@ -326,6 +332,18 @@ footer .containerfooter{
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
+  }
+  #footerlogo{
+    height: 35px;
+
+  }
+  #footersocial{
+    display: flex;
+  }
+  #footersocial img{
+    height: 35px;
+    display: flex;
+    flex-wrap: nowrap;
   }
   .footer-col .footersocials a:hover{
     color: #24262b;
