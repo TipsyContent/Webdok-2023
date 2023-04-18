@@ -138,7 +138,7 @@ body{
       gap: 0;
       flex-direction: column;
       background-color: #222222;
-      width: 25%;
+      width: 20%;
       height: 100vh;
       text-align: center;
       transition: 0.3s;
@@ -215,8 +215,23 @@ body{
 .landingpage{
     height: 100vh;
     text-align: center;
+    /* Start på animation */
+    filter: blur(5px);
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s;
 }
-
+@media(prefers-reduced-motion){
+  .landingpage{
+    opacity: 0;
+    transition: none;
+}}
+.show{
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+/* Slut på animation */
 #textbox{
   width: 50%;
   display: flex;
