@@ -18,3 +18,12 @@ document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
 //scroll to top slut//
+
+//burger menu//
+const hamburger = document.querySelector(".hamburger")
+const navMenu = document.querySelector(".navbar_menu")
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active")
+  navMenu.classList.toggle("active")
+})
