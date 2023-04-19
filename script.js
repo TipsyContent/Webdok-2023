@@ -43,5 +43,5 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-const hiddenElements = document.querySelectorAll('.landingpage');
+const hiddenElements = document.querySelectorAll('.video-section');
 hiddenElements.forEach((el) => observer.observe(el));
