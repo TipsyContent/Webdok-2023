@@ -183,13 +183,19 @@ body{
     height: 400px;
     background-color: #50befa;
     border-radius:50%;
+    animation: fly-out 1s forwards;
+ 
   }
   
   .plane {
     position: absolute;
     display: flex;
     animation: move 3s linear infinite;
+    
   }
+
+
+
   
   @keyframes move {
     0% {transform: translateY(0) rotateX(0);}
@@ -198,6 +204,8 @@ body{
     75% {transform: rotateX(-40deg) translateY(30px);}
     100% {transform: rotateX(0) translateY(0);}
   }
+
+ 
   
   .wingRight {
     position: absolute;
@@ -261,6 +269,9 @@ body{
     top:-30px;
   }
   /* pf slut */
+
+
+
   /* SIGN UP KNAPPEN */
   .navbar_btn {
     display: flex;
@@ -287,6 +298,9 @@ body{
     float: right;
   }
 /* Header slut */
+
+
+
 /* Scroll to top */
 #myBtn{
     position: fixed;
@@ -319,6 +333,7 @@ body{
 
 .landingpage{
   height: 95vh;
+  
   background-image: linear-gradient(#12c2e9, #c471ed, #f64f59);
 }
 
@@ -333,6 +348,9 @@ body{
   margin: 0 auto;
   z-index: 1;
 }
+
+
+
 
 /* Slide show start */
 #videoless{
@@ -368,9 +386,11 @@ body{
      color: white;
 }
 
+
 .video-section{
     height: 100vh;
     text-align: center;
+    
     /* Start på animation */
     filter: blur(5px);
     transform: translateX(-100%);
@@ -378,6 +398,12 @@ body{
     transition: all 1s;
     color: white;
 }
+
+
+
+
+
+
 @media(prefers-reduced-motion){
   .landingpage{
     opacity: 0;
@@ -488,7 +514,7 @@ footer .containerfooter{
     position: absolute;
     left: 0;
     bottom: -10px;
-    background-color: #C7711E;
+    background-color: #a71973;
     height: 2px;
     box-sizing: border-box;
     width: 50px;
@@ -508,7 +534,7 @@ footer .containerfooter{
   
   }
   .footer-col ul li a:hover{
-    color: #FFCC56;
+    color: #a71973;
     padding-left: 8px;
   
   }

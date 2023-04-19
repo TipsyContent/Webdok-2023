@@ -48,6 +48,8 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 
 
+
+
 //slide show// 
 const track = document.getElementById("image-track");
 
