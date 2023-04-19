@@ -8,7 +8,7 @@
 }
 body{
     min-height: 100vh;
-    
+    background-image: linear-gradient(#12c2e9, #c471ed, #f64f59);
 }
 
 /* kode til font overskrift: 
@@ -220,7 +220,7 @@ body{
 
 .landingpage{
   height: 800px;
-  
+  background-image: linear-gradient(#12c2e9, #c471ed, #f64f59);
 }
 
 .landingpage h1{
@@ -240,6 +240,10 @@ body{
 
 
 /* Video sektioner med teskt */
+.background-section{
+      background-color: #202020;
+     color: white;
+}
 
 .video-section{
     height: 100vh;
@@ -249,7 +253,6 @@ body{
     transform: translateX(-100%);
     opacity: 0;
     transition: all 1s;
-    background-color: #202020;
     color: white;
 }
 @media(prefers-reduced-motion){
