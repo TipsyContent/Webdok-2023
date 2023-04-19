@@ -7,8 +7,10 @@
     text-decoration: none;
 }
 body{
-    min-height: 100vh;
-    background-image: linear-gradient(#12c2e9, #c471ed, #f64f59);
+    background-image: linear-gradient(#f64f59, #c471ed, #12c2e9 );
+    overflow-x: hidden;
+    
+    
 }
 
 /* kode til font overskrift: 
@@ -219,7 +221,7 @@ body{
 /* stor landingpage */
 
 .landingpage{
-  height: 800px;
+  height: 95vh;
   background-image: linear-gradient(#12c2e9, #c471ed, #f64f59);
 }
 
@@ -235,13 +237,37 @@ body{
   z-index: 1;
 }
 
-
+/* Slide show start */
+#videoless{
+  height: 60vh;
+  width: 100vw;
+}
+.slideshow{
+  margin: 0;
+  overflow: hidden;
+}
+#image-track{
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%); 
+  user-select: none;
+}
+#image-track .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% center;
+}
+/* slide show slut */
 
 
 
 /* Video sektioner med teskt */
 .background-section{
-      background-color: #202020;
+      background-color: rgba(0, 0, 0, 0.5);
      color: white;
 }
 
